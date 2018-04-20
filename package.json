@@ -4,7 +4,7 @@
   "description": "Simple boilerplate with React, Webpack, and styled components",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
   "keywords": [],

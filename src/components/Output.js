@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default ({ val }) => {
+export default ({ val, unit }) => {
   return (
-    <div className="container output-container">
-      <p>{val}</p>
+    <div className="output-container">
+      <div className="container">
+        <p>{val} {unit}</p>
+      </div>
     </div>
   )
 }

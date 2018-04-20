@@ -9,33 +9,33 @@ const Input = (props) => {
         <h3>Convert From</h3>
         <input type="number" onChange={props.valChanged} value={props.val} />
         <select value={props.convertFrom} onChange={props.convertFromChanged}>
-          <option value="pm">Picometre</option>
-          <option value="nm">Nanometre</option>
-          <option value="um">Micrometre</option>
-          <option value="mm">Milimeter</option>
-          <option value="cm">Centimeter</option>
-          <option value="dm">Decimeter</option>
-          <option value="m">Meter</option>
-          <option value="km">Kilometer</option>
-          <option value="in">Inch</option>
-          <option value="ft">Foot</option>
-          <option value="yd">Yard</option>
-          <option value="mi">Mile</option>
+          <option value="pm">Picometres</option>
+          <option value="nm">Nanometres</option>
+          <option value="um">Micrometres</option>
+          <option value="mm">Milimeters</option>
+          <option value="cm">Centimeters</option>
+          <option value="dm">Decimeters</option>
+          <option value="m">Meters</option>
+          <option value="km">Kilometers</option>
+          <option value="in">Inches</option>
+          <option value="ft">Feett</option>
+          <option value="yd">Yards</option>
+          <option value="mi">Miles</option>
         </select>
         <span>to</span>
         <select value={props.convertTo} onChange={props.convertToChanged}>
-          <option value="pm">Picometre</option>
-          <option value="nm">Nanometre</option>
-          <option value="um">Micrometre</option>
-          <option value="mm">Milimeter</option>
-          <option value="cm">Centimeter</option>
-          <option value="dm">Decimeter</option>
-          <option value="m">Meter</option>
-          <option value="km">Kilometer</option>
-          <option value="in">Inch</option>
-          <option value="ft">Foot</option>
-          <option value="yd">Yard</option>
-          <option value="mi">Mile</option>
+          <option value="pm">Picometres</option>
+          <option value="nm">Nanometres</option>
+          <option value="um">Micrometres</option>
+          <option value="mm">Milimeters</option>
+          <option value="cm">Centimeters</option>
+          <option value="dm">Decimeters</option>
+          <option value="m">Meters</option>
+          <option value="km">Kilometers</option>
+          <option value="in">Inches</option>
+          <option value="ft">Feet</option>
+          <option value="yd">Yards</option>
+          <option value="mi">Miles</option>
         </select>
       </div>
     </div>

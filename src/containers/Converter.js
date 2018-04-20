@@ -86,7 +86,7 @@ export default class Converter extends Component {
           convertToChanged={this.handleConvertToChange}
         />
         <ConvertButton clicked={this.resetForm} />
-        <Output val={this.state.outputValue} />
+        <Output val={this.state.outputValue} unit={this.state.convertTo} />
       </div>
     )
   }

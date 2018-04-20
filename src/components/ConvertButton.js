@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 
 const ConvertButton = ({ clicked }) => {
   return (
-    <div className="container button-container">
-      <button onClick={clicked}>Reset Form</button>
+    <div className="button-container">
+      <div className="container">
+        <button onClick={clicked}>Reset Form</button>
+      </div>
     </div>
   )
 }
