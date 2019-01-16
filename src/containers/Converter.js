@@ -13,19 +13,13 @@ export default class Converter extends Component {
       outputValue: 0.01,
       convertTo: 'm'
     }
-
-    this.resetForm = this.resetForm.bind(this)
-    this.handleInputChange = this.handleInputChange.bind(this)
-    this.handleConvertFromChange = this.handleConvertFromChange.bind(this)
-    this.handleConvertToChange = this.handleConvertToChange.bind(this)
-    this.performConversion = this.performConversion.bind(this)
   }
 
   componentDidMount () {
     console.log(length(1, 'cm').to('m'))
   }
 
-  performConversion (value = this.state.inputValue || 1) {
+  performConversion = (value = this.state.inputValue || 1) => {
     let { convertFrom, convertTo } = this.state
     console.log({ convertFrom, convertTo })
     value = parseInt(value, 10)
@@ -38,40 +32,55 @@ export default class Converter extends Component {
     })
   }
 
-  resetForm () {
-    this.setState({
-      inputValue: '1',
-      convertFrom: 'cm',
-      outputValue: '0.01',
-      convertTo: 'm'
-    }, this.performConversion())
+  resetForm = () => {
+    this.setState(
+      {
+        inputValue: '1',
+        convertFrom: 'cm',
+        outputValue: '0.01',
+        convertTo: 'm'
+      },
+      this.performConversion()
+    )
   }
 
-  handleInputChange (event) {
+  handleInputChange = event => {
     let { value } = event.target
     if (!value) {
-      this.setState({
-        inputValue: value
-      }, this.performConversion())
+      this.setState(
+        {
+          inputValue: value
+        },
+        this.performConversion()
+      )
     }
 
-    this.setState({
-      inputValue: value
-    }, this.performConversion(value))
+    this.setState(
+      {
+        inputValue: value
+      },
+      this.performConversion(value)
+    )
   }
 
-  handleConvertFromChange (event) {
+  handleConvertFromChange = event => {
     const { value } = event.target
-    this.setState({
-      convertFrom: value
-    }, this.performConversion())
+    this.setState(
+      {
+        convertFrom: value
+      },
+      this.performConversion()
+    )
   }
 
-  handleConvertToChange (event) {
+  handleConvertToChange = event => {
     const { value } = event.target
-    this.setState({
-      convertTo: value
-    }, this.performConversion())
+    this.setState(
+      {
+        convertTo: value
+      },
+      this.performConversion()
+    )
   }
 
   render () {
