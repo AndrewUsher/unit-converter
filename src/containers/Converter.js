@@ -5,18 +5,11 @@ import ConvertButton from '../components/ConvertButton'
 import Output from '../components/Output'
 
 export default class Converter extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      inputValue: 1,
-      convertFrom: 'cm',
-      outputValue: 0.01,
-      convertTo: 'm'
-    }
-  }
-
-  componentDidMount () {
-    console.log(length(1, 'cm').to('m'))
+  state = {
+    inputValue: 1,
+    convertFrom: 'cm',
+    outputValue: 0.01,
+    convertTo: 'm'
   }
 
   performConversion = (value = this.state.inputValue || 1) => {
