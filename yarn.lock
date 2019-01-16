@@ -3495,9 +3495,10 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-length.js@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/length.js/-/length.js-0.0.7.tgz#6d9210f5dbf7cc755b935c08102051d0500dad6d"
+length.js@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/length.js/-/length.js-1.1.0.tgz#91ea150d574ccc9f49ab132a654f231d59e110f1"
+  integrity sha512-ayhbVlSztuYOYO9NmhcbZYZmgLBv1g9E7Trm4h1IP2S27C1q3b0OCj27ox1W3ZwW/9qYZisbEEvWvnRlDgyoOQ==
 
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"

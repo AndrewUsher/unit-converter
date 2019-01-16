@@ -38,7 +38,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "length.js": "^0.0.7",
+    "length.js": "^1.1.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "styled-components": "^3.2.5"
