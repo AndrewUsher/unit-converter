@@ -1,14 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Button } from './Common'
 
 const ConvertButton = ({ clicked }) => {
-  return (
-    <div className="button-container">
-      <div className="container">
-        <button onClick={clicked}>Reset Form</button>
-      </div>
-    </div>
-  )
+  return <Button onClick={clicked}>Reset Form</Button>
 }
 
 ConvertButton.propTypes = {
