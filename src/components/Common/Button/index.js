@@ -21,7 +21,7 @@ const StyledButton = styled.button`
 `
 
 const Button = ({ children, ...rest }) => (
-  <Container padLeft>
+  <Container>
     <StyledButton {...rest}>{children}</StyledButton>
   </Container>
 )
