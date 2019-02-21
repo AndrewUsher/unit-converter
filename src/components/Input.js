@@ -1,14 +1,66 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { Container } from './Common'
 
-const Input = (props) => {
+const InputContainer = styled.div`
+  font-family: ${props => props.theme.siteFont};
+  padding: 0 30px;
+`
+const ConvertLength = styled.h2`
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 20px;
+`
+
+const ConvertFrom = styled.h3`
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 30px;
+`
+
+const BaseSelectAndInput = styled.input`
+  background-color: $bgColor;
+  border: 2px solid #ddd;
+  box-shadow: 2px 3px 0 rgba(#000, 10%);
+  height: 30px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+`
+
+const StyledInput = styled(BaseSelectAndInput)`
+  border: none;
+  font-size: 20px;
+`
+
+const Select = styled(BaseSelectAndInput)`
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+`
+
+const To = styled.span`
+  font-size: 18px;
+  margin-right: 15px;
+`
+
+const Input = props => {
   return (
-    <div className="input">
-      <div className="container">
-        <h2>Convert Length</h2>
-        <h3>Convert From</h3>
-        <input type="number" onChange={props.valChanged} value={props.val} />
-        <select value={props.convertFrom} onChange={props.convertFromChanged}>
+    <InputContainer>
+      <Container>
+        <ConvertLength>Convert Length</ConvertLength>
+        <ConvertFrom>Convert From</ConvertFrom>
+        <StyledInput
+          as="input"
+          type="number"
+          onChange={props.valChanged}
+          value={props.val}
+        />
+        <Select
+          as="select"
+          value={props.convertFrom}
+          onChange={props.convertFromChanged}
+        >
           <option value="pm">Picometres</option>
           <option value="nm">Nanometres</option>
           <option value="um">Micrometres</option>
@@ -21,9 +73,13 @@ const Input = (props) => {
           <option value="ft">Feett</option>
           <option value="yd">Yards</option>
           <option value="mi">Miles</option>
-        </select>
+        </Select>
         <span>to</span>
-        <select value={props.convertTo} onChange={props.convertToChanged}>
+        <Select
+          as="select"
+          value={props.convertTo}
+          onChange={props.convertToChanged}
+        >
           <option value="pm">Picometres</option>
           <option value="nm">Nanometres</option>
           <option value="um">Micrometres</option>
@@ -36,9 +92,9 @@ const Input = (props) => {
           <option value="ft">Feet</option>
           <option value="yd">Yards</option>
           <option value="mi">Miles</option>
-        </select>
-      </div>
-    </div>
+        </Select>
+      </Container>
+    </InputContainer>
   )
 }
 
