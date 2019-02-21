@@ -28,9 +28,9 @@ export default class Converter extends Component {
   resetForm = () => {
     this.setState(
       {
-        inputValue: '1',
+        inputValue: 1,
         convertFrom: 'cm',
-        outputValue: '0.01',
+        outputValue: 0.01,
         convertTo: 'm'
       },
       this.performConversion()
@@ -76,7 +76,7 @@ export default class Converter extends Component {
     )
   }
 
-  render () {
+  render() {
     return (
       <div>
         <Input

@@ -23,14 +23,13 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        test: /\.styl$/,
-        use: ['style-loader', 'css-loader', 'stylus-loader']
-      },
-      {
         test: /\.css$/,
         use: 'css-loader'
       }
     ]
   },
-  plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
