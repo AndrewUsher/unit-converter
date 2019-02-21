@@ -11,7 +11,7 @@ const Header = styled.header`
 
 const Heading = styled.h1`
   font-size: 36px;
-  font-family: $siteFont;
+  font-family: ${props => props.theme.siteFont};
   font-weight: normal;
 `
 
