@@ -37,7 +37,7 @@
     "length.js": "^1.1.0",
     "polished": "^2.3.3",
     "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1",
+    "react-dom": "^16.10.2",
     "styled-components": "^4.1.3"
   },
   "config": {
