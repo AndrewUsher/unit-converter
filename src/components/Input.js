@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Container } from './Common'
 
@@ -91,15 +90,6 @@ const Input = props => {
       </Container>
     </InputContainer>
   )
-}
-
-Input.propTypes = {
-  val: PropTypes.string.isRequired,
-  valChanged: PropTypes.func.isRequired,
-  convertFrom: PropTypes.string.isRequired,
-  convertTo: PropTypes.string.isRequired,
-  convertFromChanged: PropTypes.func.isRequired,
-  convertToChanged: PropTypes.func.isRequired
 }
 
 export default Input
