@@ -30,7 +30,7 @@
     "length.js": "^1.1.0",
     "polished": "^3.4.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react-dom": "^16.12.0",
     "styled-components": "^4.1.3"
   },
   "config": {
