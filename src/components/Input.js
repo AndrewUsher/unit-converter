@@ -39,11 +39,6 @@ const Select = styled(BaseSelectAndInput)`
   padding: 5px 10px;
 `
 
-const To = styled.span`
-  font-size: 18px;
-  margin-right: 15px;
-`
-
 const Input = props => {
   return (
     <InputContainer>

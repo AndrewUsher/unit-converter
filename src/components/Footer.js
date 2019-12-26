@@ -14,13 +14,15 @@ const StyledFooter = styled.footer`
   width: 100%;
 `
 
-export default () => {
+const Footer = () => {
   return (
     <StyledFooter>
       <Paragraph>
-        Made with 💛 and ⚒️ by{' '}
+        Made with <span role="img" aria-label="love">💛</span> and <span role="img" aria-label="hard word">⚒️</span> by{' '}
         <Link href="https://github.com/AndrewUsher">Andrew Usher</Link>
       </Paragraph>
     </StyledFooter>
   )
 }
+
+export default Footer

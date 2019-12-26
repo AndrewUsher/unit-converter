@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container } from './Common'
 
-const Header = styled.header`
+const StyledHeader = styled.header`
   background-color: ${props => props.theme.primaryColor};
   box-shadow: 0 5px 2px rgba(#000, 15%);
   margin-bottom: 25px;
@@ -15,10 +15,12 @@ const Heading = styled.h1`
   font-weight: normal;
 `
 
-export default () => (
-  <Header>
+const Header = () => (
+  <StyledHeader>
     <Container>
       <Heading>Unit Converter</Heading>
     </Container>
-  </Header>
+  </StyledHeader>
 )
+
+export default Header

@@ -13,7 +13,7 @@ export default class Converter extends Component {
   }
 
   performConversion = (value = this.state.inputValue || 1) => {
-    let { convertFrom, convertTo } = this.state
+    const { convertFrom, convertTo } = this.state
     console.log({ convertFrom, convertTo })
     value = parseInt(value, 10)
     let output = 0
@@ -38,7 +38,7 @@ export default class Converter extends Component {
   }
 
   handleInputChange = event => {
-    let { value } = event.target
+    const { value } = event.target
     if (!value) {
       this.setState(
         {
@@ -76,7 +76,7 @@ export default class Converter extends Component {
     )
   }
 
-  render() {
+  render () {
     return (
       <div>
         <Input

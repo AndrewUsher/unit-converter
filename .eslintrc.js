@@ -1,6 +1,7 @@
 module.exports = {
-    extends: ['standard', 'react'],
+    parser: 'babel-eslint',
+    extends: ['@drewster'],
     rules: {
-        indent: ['error', 2]
+        'react/prop-types': 0
     }
 }

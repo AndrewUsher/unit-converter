@@ -15,7 +15,7 @@ const OutputContainer = styled.div`
   justify-content: center;
 `
 
-export default ({ val, unit }) => {
+const Output = ({ val, unit }) => {
   return (
     <Container>
       <OutputContainer>
@@ -24,3 +24,5 @@ export default ({ val, unit }) => {
     </Container>
   )
 }
+
+export default Output
