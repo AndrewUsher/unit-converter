@@ -4,34 +4,26 @@
   "description": "Simple boilerplate with React, Webpack, and styled components",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "Andrew Usher",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.7.7",
-    "@babel/plugin-proposal-class-properties": "7.7.4",
-    "@babel/polyfill": "7.7.0",
-    "@babel/preset-env": "7.7.7",
-    "@babel/preset-react": "7.7.4",
     "@drewster/eslint-config": "1.0.2",
-    "babel-eslint": "10.0.3",
-    "babel-loader": "8.0.6",
+    "@vitejs/plugin-react": "1.3.2",
     "cz-conventional-changelog": "3.0.2",
     "eslint": "6.8.0",
-    "image-loader": "0.0.1",
-    "webpack": "4.41.5",
-    "webpack-cli": "3.3.10",
-    "webpack-dev-server": "3.10.1"
+    "vite": "2.9.9"
   },
   "dependencies": {
-    "length.js": "^1.1.0",
+    "length.js": "1.1.1",
     "polished": "^3.4.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "styled-components": "^4.1.3"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "styled-components": "^5.3.5"
   },
   "config": {
     "commitizen": {
