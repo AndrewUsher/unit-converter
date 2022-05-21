@@ -1,6 +1,5 @@
 module.exports = {
-    parser: 'babel-eslint',
-    extends: ['@drewster'],
+    extends: ['@drewster/eslint-config/react'],
     rules: {
         'react/prop-types': 0
     }
